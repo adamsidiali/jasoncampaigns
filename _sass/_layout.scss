@@ -335,12 +335,17 @@ body.no-overflow { overflow: hidden !important; }
         margin-bottom: 10px;
         color: rgba(0,0,0,0.5);
         border: 2px solid rgba(0,0,0,0.5);
-        padding: 20px 100px;
+        padding: 20px 60px;
         box-sizing: border-box;
         font-weight: 900;
         text-align: center;
         font-size: 40px;
         text-transform: uppercase;
+
+        @include media-query($on-palm) {
+            font-size: 30px;
+            padding: 20px 40px;
+        }
 
         &:hover { cursor: pointer; background-color: rgba(0,0,0,1); color: #fff; text-decoration: none;}
     }

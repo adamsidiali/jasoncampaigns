@@ -13,13 +13,6 @@ $(document).on("click", ".donate", function () {
     $("body").addClass("no-overflow");
 })
 
-$(document).on("click", ".ceo-letter", function () {
-    $(".modal.letter-modal").addClass("active");
-    $(".modal.letter-modal-bg").addClass("active");
-    $("body").addClass("no-overflow");
-})
-
-
 
 $(document).on("click", ".close-modal", function () {
     $(".modal").removeClass("active");
