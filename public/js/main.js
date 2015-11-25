@@ -13,9 +13,16 @@ $(document).on("click", ".donate", function () {
     $("body").addClass("no-overflow");
 })
 
+$(document).on("click", ".ceo-letter", function () {
+    $(".modal.letter-modal").addClass("active");
+    $(".modal.letter-modal-bg").addClass("active");
+    $("body").addClass("no-overflow");
+})
+
+
 
 $(document).on("click", ".close-modal", function () {
-    $(".modal.donate-modal").removeClass("active");
-    $(".modal.donate-modal-bg").removeClass("active");
+    $(".modal").removeClass("active");
+    $(".modal.modal-bg").removeClass("active");
     $("body").removeClass("no-overflow");
 })
